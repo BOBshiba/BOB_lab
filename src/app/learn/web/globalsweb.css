@@ -1,0 +1,183 @@
+/*headlearn*/
+
+.bac {
+    position: relative;
+    background-color: rgb(226, 60, 60);
+    z-index: 100;
+    padding: 2rem 5rem;
+    margin: 1vw auto;
+    box-sizing: border-box
+}
+
+.bac .descenter {
+    position: relative;
+    color: white;
+    font-size: 1.2rem; /* ปรับขนาดเป็นหน่วยที่เหมาะกับ Responsive */
+    text-align: center;
+    font-weight: 400;
+    font-family: "Itim", cursive;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin: -1rem auto 0;
+    border-radius: 8px;
+    max-width: 80%;
+    z-index: 120;
+}
+
+/*imgslideshowheader*/
+.slideshow {
+    right: 25vw;
+    position: relative;
+    max-width: 45vw;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    max-width: 45vw;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item img {
+    max-width: 45vw;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.slideshow .slick-prev,
+.slideshow .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slideshow .slick-prev {
+    left: 1rem;
+}
+
+.slideshow .slick-next {
+    right: 1rem;
+}
+
+.slideshow .slick-arrow:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    width: 0.5vw;
+}
+
+
+.slideshow .slick-dots {
+    position: absolute;
+    top: 16rem;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow .slick-dots li {
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*learnsec*/
+.boxlearnsec {
+    position: relative;
+    padding: 20rem 0;
+    background-color: rgb(240, 132, 132);
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.inbox h1 {
+    display: inline-block;
+    color: white;
+    font-size: 2.5rem; /* ปรับขนาดตามหน้าจอ */
+    font-weight: 400;
+    font-family: "Itim", cursive;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.bac .BOX {
+    display: flex;
+    width: 25vw;
+    position: absolute;
+    top: 7vw;
+    right: 25vw;
+}
+.bac .BOX .box {
+    padding-left: 1vw;
+}
+.bac .BOX .box:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.textlearn {
+    z-index: 100;
+    position: relative;
+    top: -18vw;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: aliceblue;
+    padding: 1vw;
+}
+.boxlearnsec .boxalllearn {
+    position: absolute;
+    left: 5vw;
+    top: 5vw;
+    width: 100%;
+    display: flex;
+}
+.boxlearnsec .boxalllearn .boxlearn {
+    margin-right: 5vw;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 20vw; 
+}
+.boxlearnsec .boxalllearn .boxlearn .text {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2vw;
+}
+.boxlearnsec .boxalllearn .boxlearn .text h2{
+    font-size: 1.5vw;
+    font-weight: 2vw;
+    width: 55%;
+    padding-bottom: 1vw;
+}
+.boxlearnsec .boxalllearn .boxlearn .text h3{
+    font-size: 1vw;
+    font-weight: 2vw;
+    width: 90%;
+}
+.boxlearnsec .boxalllearn .boxlearn .text h4{
+    font-size: 0.6vw;   
+    font-weight: 2vw;
+    top: 26vw;
+    left: 1vw;
+}
+.boxlearnsec .boxalllearn .boxlearn .text hr{
+    border: 0.05vw solid rgb(0, 0, 0);
+    margin-top: 0.5vw;
+}
